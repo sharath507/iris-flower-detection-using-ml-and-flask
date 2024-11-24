@@ -6,73 +6,87 @@
     font-family: Arial, sans-serif;
 }
 
-/* Center content */
+/* Center the body content */
 body {
     display: flex;
     justify-content: center;
-    
+    align-items: center;
     height: 100vh;
-    background-color: #f2f2f2;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
 }
 
 /* Header styling */
 h1 {
-    font-size: 24px;
+    font-size: 28px;
     color: #333;
-    text-align: left;
-    margin-bottom: 600px;
-    margin-left: 0;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 /* Form container styling */
 form {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    width: 320px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    margin-left: 0;       /* Remove any left margin */
-    margin-right: auto; 
+    gap: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Label styling */
 label {
     font-weight: bold;
-    font-size: 14px;url(style.css)
-    color: #555;
+    font-size: 15px;
+    color: #333;
 }
 
 /* Input styling */
 input[type="number"] {
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #66a6ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 166, 255, 0.5);
 }
 
 /* Button styling */
 button {
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
     background-color: #4CAF50;
-    color: #fff;
+    color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
     background-color: #45a049;
+    transform: scale(1.05);
 }
 
 /* Prediction message styling */
 h2 {
-    text-align: left;
-    color: #333;
-    margin-top: 700px;
-    margin-right: 800px;
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-size: 18px;
 }
