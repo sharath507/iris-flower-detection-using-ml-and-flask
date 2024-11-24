@@ -62,3 +62,6 @@ o	Iris Virginica tends to have larger sepals and petals.
 This table can be useful for quickly understanding the range of measurements for each flower type.
 
 The process of training and testing the model, as well as exporting it, is handled in the model_export.py file. This script splits the Iris dataset into training and testing sets, trains the model, and evaluates its performance by calculating the accuracy. Once the training is complete, the model is exported as a .joblib file for use in the application. After running this file, the accuracy of the model will be displayed in the output.
+
+
+The application can be deployed using Docker. The required Docker commands and configurations are provided in the Dockerfile included in the repository.
